@@ -1,0 +1,46 @@
+# Archivos de build
+/bin/
+/obj/
+
+# Archivos de usuario y configuración
+*.user
+*.suo
+*.sln.ide
+.vs/
+
+# Archivos de configuración de NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Archivos de salida
+*.dll
+*.exe
+*.pdb
+
+# Archivos de log
+*.log
+
+# Directorios de depuración
+Debug/
+Release/
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de caché
+*.cache
+*.db
+
+# Ignorar archivos de configuración de entornos
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Staging.json
+
+# Otros archivos generados
+*.dbmdl
+*.dbproj.schemaview
+
+# Ignorar carpetas de pruebas generadas
+TestResults/
