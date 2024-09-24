@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\IS2-TP01\\TiendaAplicacion.Tests\\TiendaAplicacion.Tests.csproj": {}
+    "C:\\IS2-TP01-Pruebas\\TiendaAplicacion.Tests\\TiendaAplicacion.Tests.csproj": {}
   },
   "projects": {
-    "C:\\IS2-TP01\\TiendaAplicacion.Tests\\TiendaAplicacion.Tests.csproj": {
+    "C:\\IS2-TP01-Pruebas\\TiendaAplicacion.Tests\\TiendaAplicacion.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\IS2-TP01\\TiendaAplicacion.Tests\\TiendaAplicacion.Tests.csproj",
+        "projectUniqueName": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion.Tests\\TiendaAplicacion.Tests.csproj",
         "projectName": "TiendaAplicacion.Tests",
-        "projectPath": "C:\\IS2-TP01\\TiendaAplicacion.Tests\\TiendaAplicacion.Tests.csproj",
+        "projectPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion.Tests\\TiendaAplicacion.Tests.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\IS2-TP01\\TiendaAplicacion.Tests\\obj\\",
+        "outputPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\IS2-TP01\\TiendaAplicacion\\TiendaAplicacion.csproj": {
-                "projectPath": "C:\\IS2-TP01\\TiendaAplicacion\\TiendaAplicacion.csproj"
+              "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\TiendaAplicacion.csproj": {
+                "projectPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\TiendaAplicacion.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\IS2-TP01\\TiendaAplicacion\\TiendaAplicacion.csproj": {
+    "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\TiendaAplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\IS2-TP01\\TiendaAplicacion\\TiendaAplicacion.csproj",
+        "projectUniqueName": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\TiendaAplicacion.csproj",
         "projectName": "TiendaAplicacion",
-        "projectPath": "C:\\IS2-TP01\\TiendaAplicacion\\TiendaAplicacion.csproj",
+        "projectPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\TiendaAplicacion.csproj",
         "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
-        "outputPath": "C:\\IS2-TP01\\TiendaAplicacion\\obj\\",
+        "outputPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config"

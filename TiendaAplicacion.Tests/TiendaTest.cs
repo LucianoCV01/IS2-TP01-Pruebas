@@ -1,16 +1,3 @@
-/*public class Tests
-{
-    [SetUp]
-    public void Setup()
-    {
-    }
-
-    [Test]
-    public void Test1()
-    {
-        Assert.Pass();
-    }
-}*/
 using NUnit.Framework;
 using TiendaAplicacion;
 
@@ -53,6 +40,7 @@ namespace TiendaAplicacion.Tests
             Assert.AreEqual(_producto, productoEncontrado);
         }
 
+        /*Punto 1:
         [Test]
         public void TestBuscarProductoNoExistente()
         {
@@ -61,6 +49,13 @@ namespace TiendaAplicacion.Tests
 
             // Assert
             Assert.IsNull(productoNoEncontrado);
+        }*/
+        //Punto 2: lanzar exepcion si el producto no existe
+        [Test]
+        public void TestBuscarProductoNoExistente()
+        {
+            var ex = Assert.Throws<KeyNotFoundException>(() => _tienda.BuscarProducto("Cámara"));
+            Assert.That(ex.Message, Is.EqualTo("El producto 'Cámara' no se encontró."));
         }
 
         [Test]
@@ -76,12 +71,28 @@ namespace TiendaAplicacion.Tests
             // Assert
             Assert.IsNull(productoEncontrado);
         }
+        /* Punto 1:
         [Test]
         public void TestEliminarProductoNoExistente()
         {
             var eliminado = _tienda.EliminarProducto("Cámara");
             Assert.IsFalse(eliminado);
+        }*/
+        //Punto 2: lanzar exepcion si intenta eliminar un producto que no existe
+        [Test]
+        public void TestEliminarProductoNoExistente()
+        {
+            var ex = Assert.Throws<KeyNotFoundException>(() => _tienda.EliminarProducto("Cámara"));
+            Assert.That(ex.Message, Is.EqualTo("No se puede eliminar el producto 'Cámara' porque no existe."));
         }
+        //Punto 2: nuevo test para lanzar excepcion
+        [Test]
+        public void TestActualizarPrecioNegativoLanzaExcepcion()
+        {
+            var ex = Assert.Throws<ArgumentOutOfRangeException>(() => _producto.ActualizarPrecio(-500));
+            Assert.That(ex.Message, Contains.Substring("El precio no puede ser negativo."));
+        }
+
     }
 }
 /*Assert.NotNull, Assert.AreEqual, y Assert.IsNull: 
