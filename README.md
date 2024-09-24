@@ -1,5 +1,6 @@
 # IS2-TP01-Pruebas
-**Punto 1: ¿Podés identificar pruebas de unidad y de integración en la práctica que realizaste?**
+**Punto 1: ¿Podés identificar pruebas de unidad y de integración en la práctica que realizaste?**  
+
 **Pruebas de unidad:**  
 
 Todas las pruebas descriptas son pruebas de unidad, ya que se enfocan en verificar el comportamiento de métodos individuales dentro de las clases Tienda y Producto.
