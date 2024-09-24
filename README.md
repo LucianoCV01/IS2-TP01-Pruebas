@@ -10,3 +10,8 @@ Todas las pruebas descriptas son pruebas de unidad, ya que se enfocan en verific
 Aunque las pruebas son mayormente de unidad, se puede considerar que el uso de múltiples métodos dentro de la clase Tienda (por ejemplo, AgregarProducto, BuscarProducto y EliminarProducto) en una secuencia de acciones clasifica algunas como pruebas de integración básicas, ya que verifican cómo interactúan estos métodos entre sí.
 
 Con esta estructura, podés seguir expandiendo la aplicación y las pruebas a medida que lo necesites.
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> fbac2f05d8b102e9ab6fd63ccd5fbcd0e53c1cd8
