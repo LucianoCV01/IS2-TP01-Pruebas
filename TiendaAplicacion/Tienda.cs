@@ -47,5 +47,17 @@ namespace TiendaAplicacion
             }
             throw new KeyNotFoundException($"No se puede eliminar el producto '{nombre}' porque no existe.");
         }
+
+        //punto 3
+        public void AplicarDescuento(string nombre, decimal porcentaje)
+        {
+            if (porcentaje < 0 || porcentaje > 100)
+            {
+                throw new ArgumentOutOfRangeException(nameof(porcentaje), "El porcentaje debe estar entre 0 y 100.");
+            }
+
+            var producto = BuscarProducto(nombre);
+            producto.ActualizarPrecio(producto.Precio * (1 - porcentaje / 100));
+        }
     }
 }

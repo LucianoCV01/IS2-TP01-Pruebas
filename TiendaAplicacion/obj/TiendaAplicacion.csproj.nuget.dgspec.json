@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\TiendaAplicacion.csproj",
         "projectName": "TiendaAplicacion",
         "projectPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\TiendaAplicacion.csproj",
-        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
         "outputPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"

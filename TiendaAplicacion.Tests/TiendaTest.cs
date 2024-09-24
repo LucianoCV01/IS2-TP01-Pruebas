@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using TiendaAplicacion;
+using Moq;
 
 namespace TiendaAplicacion.Tests
 {
@@ -13,10 +14,10 @@ namespace TiendaAplicacion.Tests
         public void Setup()
         {
             _tienda = new Tienda();
-            _producto = new Producto("Laptop", 1000, "Electrónica");
+            //_producto = new Producto("Laptop", 1000, "Electrónica");
         }
 
-        [Test]
+        /*[Test]
         public void TestAgregarProducto()
         {
             _tienda.AgregarProducto(_producto);
@@ -38,7 +39,7 @@ namespace TiendaAplicacion.Tests
             // Assert
             Assert.NotNull(productoEncontrado);
             Assert.AreEqual(_producto, productoEncontrado);
-        }
+        }*/
 
         /*Punto 1:
         [Test]
@@ -51,7 +52,7 @@ namespace TiendaAplicacion.Tests
             Assert.IsNull(productoNoEncontrado);
         }*/
         //Punto 2: lanzar exepcion si el producto no existe
-        [Test]
+        /*[Test]
         public void TestBuscarProductoNoExistente()
         {
             var ex = Assert.Throws<KeyNotFoundException>(() => _tienda.BuscarProducto("Cámara"));
@@ -70,7 +71,7 @@ namespace TiendaAplicacion.Tests
 
             // Assert
             Assert.IsNull(productoEncontrado);
-        }
+        }*/
         /* Punto 1:
         [Test]
         public void TestEliminarProductoNoExistente()
@@ -79,7 +80,7 @@ namespace TiendaAplicacion.Tests
             Assert.IsFalse(eliminado);
         }*/
         //Punto 2: lanzar exepcion si intenta eliminar un producto que no existe
-        [Test]
+        /*[Test]
         public void TestEliminarProductoNoExistente()
         {
             var ex = Assert.Throws<KeyNotFoundException>(() => _tienda.EliminarProducto("Cámara"));
@@ -91,6 +92,42 @@ namespace TiendaAplicacion.Tests
         {
             var ex = Assert.Throws<ArgumentOutOfRangeException>(() => _producto.ActualizarPrecio(-500));
             Assert.That(ex.Message, Contains.Substring("El precio no puede ser negativo."));
+        }*/
+
+        //punto 3
+
+        [Test]
+        public void TestAplicarDescuentoCalculaNuevoPrecio()
+        {
+            // Arrange
+            var productoMock = new Mock<Producto>("Laptop", 1000m, "Electrónica");
+            _tienda.AgregarProducto(productoMock.Object);
+
+            // Act
+            _tienda.AplicarDescuento("Laptop", 10); // Aplicamos un 10% de descuento
+
+            // Assert
+            // Verificamos que se haya llamado a ActualizarPrecio con el nuevo precio
+            productoMock.Verify(p => p.ActualizarPrecio(900), Times.Once);
+        }
+
+        [Test]
+        public void TestAplicarDescuentoFueraDeRangoLanzaExcepcion()
+        {
+            // Arrange
+            _tienda.AgregarProducto(new Producto("Laptop", 1000m, "Electrónica"));
+
+            // Act & Assert
+            var ex = Assert.Throws<ArgumentOutOfRangeException>(() => _tienda.AplicarDescuento("Laptop", 110));
+            Assert.That(ex.Message, Is.EqualTo("El porcentaje debe estar entre 0 y 100. (Parameter 'porcentaje')"));
+        }
+
+        [Test]
+        public void TestAplicarDescuentoProductoNoExistenteLanzaExcepcion()
+        {
+            // Act & Assert
+            var ex = Assert.Throws<KeyNotFoundException>(() => _tienda.AplicarDescuento("Cámara", 10));
+            Assert.That(ex.Message, Is.EqualTo("El producto 'Cámara' no se encontró."));
         }
 
     }

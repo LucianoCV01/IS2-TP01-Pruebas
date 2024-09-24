@@ -20,3 +20,17 @@ Proceso para escribir primero los tests (TDD):
 - **Ejecutar la prueba:** Como aún no se ha implementado el código, la prueba fallará. Esta falla confirma que la funcionalidad no está presente o no funciona correctamente, validando que la prueba es efectiva.
 - **Escribir el código mínimo necesario para pasar la prueba:** Una vez que la prueba ha fallado, se implementa el código necesario para que la prueba pase. No se debe agregar más funcionalidad de la necesaria, solo lo suficiente para que la prueba pase.
 - **Refactorizar:** Después de que la prueba pase, se puede limpiar o mejorar el código sin cambiar su funcionalidad, asegurándose de que todas las pruebas sigan pasando.
+
+
+**Punto 3**
+¿Puedes identificar 'Controladores' y 'Resguardos' en lo que va del trabajo práctico?
+**-Controladores:** en este contexto son los métodos que gestionan la lógica de negocio en la clase Tienda. Por ejemplo: agregar_producto, buscar_producto y eliminar_producto actúan como controladores, ya que gestionan el comportamiento de la tienda y su inventario.
+**-Resguardos (Stubs):** son representaciones simplificadas de objetos reales que solo proporcionan datos de prueba o imitan comportamientos simples. En este caso, los mocks actúan como resguardos porque permiten simular el comportamiento de los productos sin interactuar con objetos reales.
+
+¿Qué es un mock? ¿Hay otros nombres para los objetos/funciones simulados?
+Un mock es un objeto simulado que se utiliza en las pruebas para imitar el comportamiento de objetos reales. Los mocks permiten verificar interacciones, como si se llamó a un método y con qué argumentos, sin necesidad de usar una instancia real de ese objeto. 
+Otros nombres para objetos/funciones simulados:
+**-Stub:** objeto que simplemente devuelve datos predefinidos, pero no registra información sobre cómo se ha utilizado.
+**-Fake:** objeto que tiene una implementación simple pero funcional, que se usa en lugar de un objeto real en las pruebas.
+**-Spy:** similar a un mock, pero además de simular el comportamiento, también puede verificar si se han realizado llamadas a métodos, como cuántas veces se llamaron y con qué argumentos.
+**-Dummy:** objeto que no tiene comportamiento, se utiliza solo para cumplir con los parámetros requeridos en las pruebas.

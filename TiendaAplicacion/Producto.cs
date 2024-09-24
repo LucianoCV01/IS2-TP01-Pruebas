@@ -19,7 +19,7 @@
         }
 
         //Punto 2: nuevo metodo
-        public void ActualizarPrecio(decimal nuevoPrecio)
+        public virtual void ActualizarPrecio(decimal nuevoPrecio) //punto 3 agregar virtual para usar moq
         {
             if (nuevoPrecio < 0)
             {
