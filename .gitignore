@@ -44,3 +44,23 @@ appsettings.Staging.json
 
 # Ignorar carpetas de pruebas generadas
 TestResults/
+
+# Ignorar carpetas de compilación
+bin/
+obj/
+
+# Ignorar archivos de cobertura de pruebas
+*.pdb
+*.dll
+*.exe
+*.tmp
+*.json
+
+# Ignorar archivos de configuración de NuGet
+*.cache
+*.g.props
+*.nuget.dgspec.json
+project.assets.json
+project.nuget.cache
+
+*/bin/*/nunit_random_seed.tmp
