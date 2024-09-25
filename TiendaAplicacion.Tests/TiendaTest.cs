@@ -1,7 +1,6 @@
 using NUnit.Framework;
 using TiendaAplicacion;
 using Moq;
-
 namespace TiendaAplicacion.Tests
 {
     public class TiendaTests

@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion.Tests\\TiendaAplicacion.Tests.csproj",
         "projectName": "TiendaAplicacion.Tests",
         "projectPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion.Tests\\TiendaAplicacion.Tests.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
         "outputPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -61,7 +61,7 @@
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.5.0, )"
+              "version": "[4.6.0, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -98,11 +98,11 @@
         "projectUniqueName": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\TiendaAplicacion.csproj",
         "projectName": "TiendaAplicacion",
         "projectPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\TiendaAplicacion.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Windows\\.nuget\\packages\\",
         "outputPath": "C:\\IS2-TP01-Pruebas\\TiendaAplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Windows\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
