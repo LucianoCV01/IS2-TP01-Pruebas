@@ -51,3 +51,32 @@ Ventajas del Uso de Fixtures:
 Setup y Teardown en Testing:
 - **Setup:** se refiere al proceso de preparar el entorno antes de ejecutar cada prueba. Esto puede incluir la creación de objetos necesarios, inicialización de datos y configuración de dependencias. en NUnit, esto se puede hacer con el atributo *SetUp*.
 - **Teardown:** se refiere a la limpieza del entorno después de que una prueba se ha ejecutado. Esto puede incluir liberar recursos, eliminar datos temporales o cerrar conexiones. En NUnit, esto se puede hacer con el atributo *TearDown*.
+
+**Punto 5:**
+
+**¿Puede describir una situación de desarrollo para este caso en donde se plantee pruebas de integración ascendente? Describa la situación.**
+
+**Descripción de la Situación**:  
+En el contexto del proyecto de gestión de productos en una tienda, las pruebas de integración ascendente se enfocan en verificar que varios componentes del sistema funcionen correctamente juntos, simulando el flujo completo que un usuario podría experimentar. A continuación, se detallan algunas pruebas que se pueden considerar como pruebas de integración ascendente, junto con sus métodos asociados:
+
+### 1. Agregar Productos y Calcular Total
+- **Método**: `CalcularTotalCarrito`
+- **Descripción**: Agregar productos a la tienda y luego calcular el total de un carrito de compras para asegurarse de que la suma de los precios sea correcta.
+
+### 2. Aplicar Descuento y Calcular Total
+- **Método**: `AplicarDescuento` y `CalcularTotalCarrito`
+- **Descripción**: Agregar productos a la tienda, aplicar un descuento a uno de ellos y calcular el total del carrito para verificar que el descuento se aplique correctamente.
+
+### 3. Buscar Producto y Verificar Precio
+- **Método**: `AgregarProducto` y `BuscarProducto`
+- **Descripción**: Agregar un producto a la tienda y luego buscarlo para asegurarse de que se recupere correctamente y que su precio sea el esperado.
+
+### 4. Eliminar Producto y Calcular Total
+- **Método**: `EliminarProducto` y `CalcularTotalCarrito`
+- **Descripción**: Agregar varios productos, eliminar uno y luego calcular el total del carrito para asegurarse de que el total se actualice correctamente.
+
+### 5. Flujo Completo de Compras
+- **Método**: `AgregarProducto`, `AplicarDescuento`, `CalcularTotalCarrito`
+- **Descripción**: Simular el flujo completo de un usuario que agrega productos al carrito, aplica descuentos y finalmente calcula el total.
+
+Este enfoque garantiza que todos los componentes del sistema interactúen correctamente, desde los módulos más básicos hasta las funcionalidades más complejas. Las pruebas de integración ascendente no solo mejoran la calidad del software, sino que también permiten a los desarrolladores identificar problemas en etapas tempranas del desarrollo.
