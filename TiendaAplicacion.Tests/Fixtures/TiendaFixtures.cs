@@ -8,8 +8,8 @@ public class TiendaFixture
     public TiendaFixture()
     {
         Tienda = new Tienda();
-        Tienda.AgregarProducto(new Producto("Laptop", 1000m, "Electrónica"));
-        Tienda.AgregarProducto(new Producto("Teléfono", 500m, "Electrónica"));
-        Tienda.AgregarProducto(new Producto("Mesa", 150m, "Muebles"));
+        Tienda.AgregarProducto(new Producto("Laptop", 1000, "Electrónica"));
+        Tienda.AgregarProducto(new Producto("Teléfono", 500, "Electrónica"));
+        Tienda.AgregarProducto(new Producto("Mesa", 150, "Muebles"));
     }
 }

@@ -59,5 +59,20 @@ namespace TiendaAplicacion
             var producto = BuscarProducto(nombre);
             producto.ActualizarPrecio(producto.Precio * (1 - porcentaje / 100));
         }
+
+        //Punto 5
+        public decimal CalcularTotalCarrito(List<string> nombresProductos)
+        {
+            decimal total = 0;
+            foreach (var nombre in nombresProductos)
+            {
+                var producto = BuscarProducto(nombre);
+                if (producto != null)
+                {
+                    total += producto.Precio;
+                }
+            }
+            return total;
+        }
     }
 }
