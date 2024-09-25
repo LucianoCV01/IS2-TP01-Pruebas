@@ -61,22 +61,27 @@ En el contexto del proyecto de gestión de productos en una tienda, las pruebas 
 
 **Agregar Productos y Calcular Total**
 - **Método**: *CalcularTotalCarrito*
+  
 Agregar productos a la tienda y luego calcular el total de un carrito de compras para asegurarse de que la suma de los precios sea correcta.
 
 **Aplicar Descuento y Calcular Total**
 - **Método**: *AplicarDescuento* y *CalcularTotalCarrito*
+  
 Agregar productos a la tienda, aplicar un descuento a uno de ellos y calcular el total del carrito para verificar que el descuento se aplique correctamente.
 
 **Buscar Producto y Verificar Precio**
 - **Método**: *AgregarProducto* y *BuscarProducto*
+  
 Agregar un producto a la tienda y luego buscarlo para asegurarse de que se recupere correctamente y que su precio sea el esperado.
 
 **Eliminar Producto y Calcular Total**
 - **Método**: *EliminarProducto* y *CalcularTotalCarrito*
+  
 Agregar varios productos, eliminar uno y luego calcular el total del carrito para asegurarse de que el total se actualice correctamente.
 
 **Flujo Completo de Compras**
 - **Método**: *AgregarProducto*, *AplicarDescuento*, *CalcularTotalCarrito*
+  
 Simular el flujo completo de un usuario que agrega productos al carrito, aplica descuentos y finalmente calcula el total.
 
 Este enfoque garantiza que todos los componentes del sistema interactúen correctamente, desde los módulos más básicos hasta las funcionalidades más complejas. Las pruebas de integración ascendente no solo mejoran la calidad del software, sino que también permiten a los desarrolladores identificar problemas en etapas tempranas del desarrollo.
