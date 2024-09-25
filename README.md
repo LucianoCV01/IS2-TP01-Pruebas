@@ -23,7 +23,9 @@ Proceso para escribir primero los tests (TDD):
 
 
 **Punto 3:**
+
 **¿Puedes identificar 'Controladores' y 'Resguardos' en lo que va del trabajo práctico?**
+
 **- Controladores:** en este contexto son los métodos que gestionan la lógica de negocio en la clase Tienda. Por ejemplo: agregar_producto, buscar_producto y eliminar_producto actúan como controladores, ya que gestionan el comportamiento de la tienda y su inventario.
 **- Resguardos (Stubs):** son representaciones simplificadas de objetos reales que solo proporcionan datos de prueba o imitan comportamientos simples. En este caso, los mocks actúan como resguardos porque permiten simular el comportamiento de los productos sin interactuar con objetos reales.
 
@@ -36,10 +38,12 @@ Otros nombres para objetos/funciones simulados:
 **- Dummy:** objeto que no tiene comportamiento, se utiliza solo para cumplir con los parámetros requeridos en las pruebas.
 
 **Punto 4:** 
+
 Ventajas del Uso de Fixtures:
 - **Reutilización de Código:** el fixture permite reutilizar la inicialización de datos y lógica en múltiples pruebas, evitando la duplicación.
 - **Facilidad de Mantenimiento:** si necesitas cambiar los datos de prueba, solo necesitas hacerlo en un lugar.
 - **Claridad:** las pruebas se vuelven más limpias y más fáciles de leer, ya que se eliminan los detalles de la configuración.
+
 Setup y Teardown en Testing:
 - **Setup:** se refiere al proceso de preparar el entorno antes de ejecutar cada prueba. Esto puede incluir la creación de objetos necesarios, inicialización de datos y configuración de dependencias. en NUnit, esto se puede hacer con el atributo *SetUp*.
 - **Teardown:** se refiere a la limpieza del entorno después de que una prueba se ha ejecutado. Esto puede incluir liberar recursos, eliminar datos temporales o cerrar conexiones. En NUnit, esto se puede hacer con el atributo *TearDown*.
