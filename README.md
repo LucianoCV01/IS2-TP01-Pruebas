@@ -63,19 +63,19 @@ En el contexto del proyecto de gestión de productos en una tienda, las pruebas 
 - **Método**: `CalcularTotalCarrito`
 - **Descripción**: Agregar productos a la tienda y luego calcular el total de un carrito de compras para asegurarse de que la suma de los precios sea correcta.
 
-### 2. Aplicar Descuento y Calcular Total
+**2. Aplicar Descuento y Calcular Total**
 - **Método**: `AplicarDescuento` y `CalcularTotalCarrito`
 - **Descripción**: Agregar productos a la tienda, aplicar un descuento a uno de ellos y calcular el total del carrito para verificar que el descuento se aplique correctamente.
 
-### 3. Buscar Producto y Verificar Precio
+**3. Buscar Producto y Verificar Precio**
 - **Método**: `AgregarProducto` y `BuscarProducto`
 - **Descripción**: Agregar un producto a la tienda y luego buscarlo para asegurarse de que se recupere correctamente y que su precio sea el esperado.
 
-### 4. Eliminar Producto y Calcular Total
+**4. Eliminar Producto y Calcular Total**
 - **Método**: `EliminarProducto` y `CalcularTotalCarrito`
 - **Descripción**: Agregar varios productos, eliminar uno y luego calcular el total del carrito para asegurarse de que el total se actualice correctamente.
 
-### 5. Flujo Completo de Compras
+**5. Flujo Completo de Compras**
 - **Método**: `AgregarProducto`, `AplicarDescuento`, `CalcularTotalCarrito`
 - **Descripción**: Simular el flujo completo de un usuario que agrega productos al carrito, aplica descuentos y finalmente calcula el total.
 
