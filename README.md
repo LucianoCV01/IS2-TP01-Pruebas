@@ -1,5 +1,7 @@
 # IS2-TP01-Pruebas
-**Punto 1: ¿Podés identificar pruebas de unidad y de integración en la práctica que realizaste?**  
+**Punto 1:** 
+
+**¿Podés identificar pruebas de unidad y de integración en la práctica que realizaste?**  
 
 **Pruebas de unidad:**  
 
@@ -11,7 +13,9 @@ Aunque las pruebas son mayormente de unidad, se puede considerar que el uso de m
 
 Con esta estructura, podés seguir expandiendo la aplicación y las pruebas a medida que lo necesites.
 
-**Punto 2: ¿Podría haber escrito las pruebas primero antes de modificar el código de la aplicación? ¿Cómo sería el proceso de escribir primero los tests?**
+**Punto 2:** 
+
+**¿Podría haber escrito las pruebas primero antes de modificar el código de la aplicación? ¿Cómo sería el proceso de escribir primero los tests?**
 
 Sí, se podrían haber escrito las pruebas antes de modificar el código de la aplicación. Se utiliza un enfoque de una práctica llamada **Desarrollo Basado en Pruebas (TDD)**, que implica escribir las pruebas antes de implementar o modificar el código, lo que te obliga a pensar en los requisitos y el comportamiento del sistema desde el punto de vista del usuario final o del desarrollador.
 
