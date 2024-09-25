@@ -59,7 +59,7 @@ Setup y Teardown en Testing:
 **Descripción de la Situación**:  
 En el contexto del proyecto de gestión de productos en una tienda, las pruebas de integración ascendente se enfocan en verificar que varios componentes del sistema funcionen correctamente juntos, simulando el flujo completo que un usuario podría experimentar. A continuación, se detallan algunas pruebas que se pueden considerar como pruebas de integración ascendente, junto con sus métodos asociados:
 
-### 1. Agregar Productos y Calcular Total
+**1. Agregar Productos y Calcular Total**
 - **Método**: `CalcularTotalCarrito`
 - **Descripción**: Agregar productos a la tienda y luego calcular el total de un carrito de compras para asegurarse de que la suma de los precios sea correcta.
 
