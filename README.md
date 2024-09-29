@@ -30,7 +30,7 @@ Proceso para escribir primero los tests (TDD):
 
 **¿Puedes identificar 'Controladores' y 'Resguardos' en lo que va del trabajo práctico?**
 
-- **Controladores:** en este contexto son los métodos que gestionan la lógica de negocio en la clase Tienda. Por ejemplo: agregar_producto, buscar_producto y eliminar_producto actúan como controladores, ya que gestionan el comportamiento de la tienda y su inventario.
+- **Controladores (drivers):** en este proyecto son métodos que conducen la ejecución de las pruebas. En este caso: Cada método de prueba individual dentro de ProductoTest, TiendaTest y TiendaTestFixture actúa como un controlador. Estos métodos son los que ejecutan el código bajo prueba y verifican su comportamiento.
 - **Resguardos (Stubs):** son representaciones simplificadas de objetos reales que solo proporcionan datos de prueba o imitan comportamientos simples. En este caso, los mocks actúan como resguardos porque permiten simular el comportamiento de los productos sin interactuar con objetos reales.
 
 **¿Qué es un mock? ¿Hay otros nombres para los objetos/funciones simulados?**
