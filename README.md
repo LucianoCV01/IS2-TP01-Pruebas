@@ -1,4 +1,11 @@
 # IS2-TP01-Pruebas
+## Integrantes:
+- Atim, Guadalupe
+- Cosentino Veglia, Luciano
+- Rollan, Natalia
+- Serra, Maria José
+- Zelaya, Andrea Vanina
+
 **Punto 1:** 
 
 **¿Podés identificar pruebas de unidad y de integración en la práctica que realizaste?**  
