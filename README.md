@@ -6,7 +6,7 @@
 - Serra, Maria José
 - Zelaya, Andrea Vanina
 
-**Punto 1:** 
+### Punto 1:
 
 **¿Podés identificar pruebas de unidad y de integración en la práctica que realizaste?**  
 
@@ -20,7 +20,7 @@ Aunque las pruebas son mayormente de unidad, se puede considerar que el uso de m
 
 Con esta estructura, podés seguir expandiendo la aplicación y las pruebas a medida que lo necesites.
 
-**Punto 2:** 
+### Punto 2: 
 
 **¿Podría haber escrito las pruebas primero antes de modificar el código de la aplicación? ¿Cómo sería el proceso de escribir primero los tests?**
 
@@ -33,7 +33,7 @@ Proceso para escribir primero los tests (TDD):
 - **Refactorizar:** Después de que la prueba pase, se puede limpiar o mejorar el código sin cambiar su funcionalidad, asegurándose de que todas las pruebas sigan pasando.
 
 
-**Punto 3:**
+### Punto 3:
 
 **¿Puedes identificar 'Controladores' y 'Resguardos' en lo que va del trabajo práctico?**
 
@@ -48,7 +48,7 @@ Otros nombres para objetos/funciones simulados:
 - **Spy:** similar a un mock, pero además de simular el comportamiento, también puede verificar si se han realizado llamadas a métodos, como cuántas veces se llamaron y con qué argumentos.
 - **Dummy:** objeto que no tiene comportamiento, se utiliza solo para cumplir con los parámetros requeridos en las pruebas.
 
-**Punto 4:** 
+### Punto 4:
 
 Ventajas del Uso de Fixtures:
 - **Reutilización de Código:** el fixture permite reutilizar la inicialización de datos y lógica en múltiples pruebas, evitando la duplicación.
@@ -59,7 +59,7 @@ Setup y Teardown en Testing:
 - **Setup:** se refiere al proceso de preparar el entorno antes de ejecutar cada prueba. Esto puede incluir la creación de objetos necesarios, inicialización de datos y configuración de dependencias. en NUnit, esto se puede hacer con el atributo *SetUp*.
 - **Teardown:** se refiere a la limpieza del entorno después de que una prueba se ha ejecutado. Esto puede incluir liberar recursos, eliminar datos temporales o cerrar conexiones. En NUnit, esto se puede hacer con el atributo *TearDown*.
 
-**Punto 5:**
+### Punto 5:
 
 **¿Puede describir una situación de desarrollo para este caso en donde se plantee pruebas de integración ascendente? Describa la situación.**
 
