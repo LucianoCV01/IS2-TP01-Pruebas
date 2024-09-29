@@ -10,15 +10,7 @@
 
 **¿Podés identificar pruebas de unidad y de integración en la práctica que realizaste?**  
 
-**Pruebas de unidad:**  
-
-Todas las pruebas descriptas son pruebas de unidad, ya que se enfocan en verificar el comportamiento de métodos individuales dentro de las clases Tienda y Producto.
-
-**Pruebas de integración:**  
-
-Aunque las pruebas son mayormente de unidad, se puede considerar que el uso de múltiples métodos dentro de la clase Tienda (por ejemplo, AgregarProducto, BuscarProducto y EliminarProducto) en una secuencia de acciones clasifica algunas como pruebas de integración básicas, ya que verifican cómo interactúan estos métodos entre sí.
-
-Con esta estructura, podés seguir expandiendo la aplicación y las pruebas a medida que lo necesites.
+La clase Tienda depende directamente de los objetos de la clase Producto, lo que implica que para probar completamente la funcionalidad de Tienda, se debe interactuar con instancias reales de Producto, lo que hace que estas pruebas sean pruebas de integración. Usar mocks no sería ideal en este caso, ya que la tienda no tiene sentido sin productos y la interacción entre ambas clases es crucial para verificar el correcto funcionamiento del sistema. Los mocks serían útiles en pruebas unitarias para aislar la lógica de Tienda de la de Producto, pero aquí, probar las dos juntas es más sencillo y refleja mejor los escenarios reales. La separación de dependencias mediante mocks requeriría un esfuerzo adicional y podría no ser representativa de las operaciones del mundo real, por lo tanto consideramos que no hay pruebas de unidad. 
 
 ### Punto 2: 
 
